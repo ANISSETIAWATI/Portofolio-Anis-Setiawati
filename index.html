@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <div class="aurora-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="music-widget glass-panel tilt-card cursor-pointer hidden md:flex">
+        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white">
+            <i class="fas fa-music text-xs"></i>
+        </div>
+        <div>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">Listening to</p>
+            <p class="text-xs font-bold text-white">Lo-fi Study Beats</p>
+        </div>
+        <div class="music-bars ml-2">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top glass-panel hover:bg-white/10 text-white magnetic-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 p-6">
+        <div class="max-w-6xl mx-auto glass-panel rounded-full px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-bold tracking-widest serif italic magnetic-btn">Portofolio.</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link magnetic-btn">BERANDA</a>
+                <a href="#about" class="nav-link magnetic-btn">TENTANG</a>
+                <a href="#projects" class="nav-link magnetic-btn">KARYA</a>
+                <a href="#contact" class="nav-link magnetic-btn">KONTAK</a>
+            </div>
+            <a href="#" class="hidden md:inline-block px-5 py-2 text-sm border border-white/30 rounded-full hover:bg-white hover:text-black transition-all magnetic-btn">
+                <i class="fas fa-download mr-2"></i> Unduh CV
+            </a>
+            <button class="md:hidden text-white magnetic-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col justify-center relative px-4 pt-32 pb-20">
+        <div class="text-center z-10 max-w-5xl mx-auto mb-16">
+            <div class="inline-block px-4 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm mb-6 fade-in-up">
+                <span class="w-2 h-2 rounded-full bg-green-400 inline-block mr-2 animate-pulse"></span>
+                Open for Internship & Freelance
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 leading-tight min-h-[140px] md:min-h-[200px]">
+                Student & <br>
+                <span class="txt-type text-purple-300 italic serif"></span>
+            </h1>
+            
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Halo, saya <strong class="text-white">[aniss]</strong>. Mahasiswa Teknik Elektro yang gemar mengubah kafein menjadi barisan kode yang cantik dan fungsional.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 items-center">
+                <a href="#projects" class="magnetic-btn group relative px-8 py-3 rounded-full bg-white text-black font-semibold overflow-hidden w-full md:w-auto text-center">
+                    <span class="relative z-10 group-hover:text-white transition-colors duration-300">Lihat Portfolio</span>
+                    <div class="absolute inset-0 bg-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                </a>
+                <a href="https://github.com/ANISSETIAWATI" target="_blank" class="magnetic-btn flex items-center gap-3 px-8 py-3 rounded-full border border-white/30 hover:bg-white/10 transition-all w-full md:w-auto justify-center">
+                    <i class="fab fa-github text-xl"></i> Github
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full max-w-6xl mx-auto glass-panel py-4 rounded-xl reveal">
+            <p class="text-center text-xs text-gray-400 uppercase tracking-widest mb-4">Teknologi yang saya gunakan</p>
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <span class="marquee-item"><i class="fab fa-html5 text-orange-500"></i> HTML5</span>
+                    <span class="marquee-item"><i class="fab fa-css3-alt text-blue-500"></i> CSS3</span>
+                    <span class="marquee-item"><i class="fab fa-js text-yellow-400"></i> JavaScript</span>
+                    <span class="marquee-item"><i class="fab fa-react text-cyan-400"></i> React.js</span>
+                    <span class="marquee-item"><i class="fab fa-node text-green-500"></i> Node.js</span>
+                    <span class="marquee-item"><i class="fab fa-git-alt text-red-500"></i> Git</span>
+                    <span class="marquee-item"><i class="fas fa-wind text-cyan-300"></i> Tailwind</span>
+                    <span class="marquee-item"><i class="fab fa-figma text-purple-400"></i> Figma</span>
+                    <span class="marquee-item"><i class="fab fa-html5 text-orange-500"></i> HTML5</span>
+                    <span class="marquee-item"><i class="fab fa-css3-alt text-blue-500"></i> CSS3</span>
+                    <span class="marquee-item"><i class="fab fa-js text-yellow-400"></i> JavaScript</span>
+                    <span class="marquee-item"><i class="fab fa-react text-cyan-400"></i> React.js</span>
+                    <span class="marquee-item"><i class="fab fa-node text-green-500"></i> Node.js</span>
+                    <span class="marquee-item"><i class="fab fa-git-alt text-red-500"></i> Git</span>
+                    <span class="marquee-item"><i class="fas fa-wind text-cyan-300"></i> Tailwind</span>
+                    <span class="marquee-item"><i class="fab fa-figma text-purple-400"></i> Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="sticky top-24 reveal">
+                    <div class="glass-panel p-2 rounded-2xl mb-8 tilt-card">
+                        <div class="aspect-[4/3] rounded-xl overflow-hidden relative group">
+                            <img src="assets/profil.jpg" 
+                                 alt="Profile" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100">
+                             <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                                 <p class="font-bold text-white">Coding at Campus Library</p>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="code-window tilt-card shadow-2xl">
+                        <div class="code-header">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                            <span class="ml-2 text-gray-400 text-xs">developer.js</span>
+                        </div>
+                        <div class="p-4 bg-[#0f172a]/90 text-gray-300 leading-relaxed">
+                            <p><span class="syntax-pink">const</span> <span class="syntax-green">mahasiswa</span> = {</p>
+                            <p class="pl-4">nama: <span class="syntax-yellow">'[Anis Setiawati]'</span>,</p>
+                            <p class="pl-4">kampus: <span class="syntax-yellow">'[Universitas Lampung]'</span>,</p>
+                            <p class="pl-4">passion: [<span class="syntax-yellow">'Code'</span>, <span class="syntax-yellow">'Coffee'</span>],</p>
+                            <p class="pl-4">status: <span class="syntax-pink">true</span> <span class="syntax-comment">// Ready to hire!</span></p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 serif">Hello World! <span class="italic text-purple-300">I'm Dev.</span></h2>
+                    <p class="text-gray-300 leading-relaxed mb-6 text-lg">
+                        Saat ini saya adalah mahasiswa semester [5] jurusan [Teknik Elektro] di [Universitas Lampung]. Saya memiliki ketertarikan mendalam pada pengembangan web modern dan desain antarmuka.
+                    </p>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <span class="text-3xl font-bold text-gradient counter" data-target="150">0</span>
+                            <p class="text-xs text-gray-400 mt-1 uppercase tracking-wider">SKS Selesai</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <span class="text-3xl font-bold text-gradient counter" data-target="342">0</span>
+                            <p class="text-xs text-gray-400 mt-1 uppercase tracking-wider">Kopi Diminum</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center col-span-2 md:col-span-1">
+                            <span class="text-3xl font-bold text-gradient counter" data-target="24">0</span>
+                            <p class="text-xs text-gray-400 mt-1 uppercase tracking-wider">Proyek Kampus</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-6 border-b border-white/10 pb-2">Jejak Langkah</h3>
+                    
+                    <div class="pl-2 border-l-2 border-white/10 ml-3 md:ml-0 space-y-10">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="text-sm text-purple-300 font-mono">2021 - Sekarang</span>
+                            <h4 class="text-xl font-bold mt-1">[Jurusan Kamu]</h4>
+                            <p class="text-gray-400 text-sm mb-2">[Nama Universitas]</p>
+                            <p class="text-gray-400 text-sm">Aktif di Himpunan Mahasiswa sebagai Divisi IT. IPK Saat ini: 3.xx</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="text-sm text-purple-300 font-mono">2023 (3 Bulan)</span>
+                            <h4 class="text-xl font-bold mt-1">Fullstack Web Bootcamp</h4>
+                            <p class="text-gray-400 text-sm mb-2">[Nama Penyelenggara Bootcamp]</p>
+                            <p class="text-gray-400 text-sm">Belajar intensif React, Node.js, dan Database Management.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="text-sm text-purple-300 font-mono">2022</span>
+                            <h4 class="text-xl font-bold mt-1">Juara 2 Web Design Competition</h4>
+                            <p class="text-gray-400 text-sm mb-2">Universitas XYZ</p>
+                            <p class="text-gray-400 text-sm">Merancang website edukasi interaktif menggunakan HTML, CSS, dan JS Vanilla.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-16">
+                        <h3 class="text-2xl font-bold mb-8 border-b border-white/10 pb-2 flex items-center gap-3">
+                            <i class="fas fa-award text-yellow-400"></i> Sertifikasi & Lisensi
+                        </h3>
+                        
+                        <div class="grid gap-4">
+                            <div class="glass-card p-5 rounded-xl border border-white/5 hover:border-purple-500/50 transition-all flex flex-col sm:flex-row gap-5 items-center sm:items-start text-center sm:text-left group">
+                                <div class="w-16 h-16 rounded-2xl bg-[#2d3748] flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <span class="text-2xl font-bold text-white">D</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-bold text-white mb-1">Program ASAH 2025</h4>
+                                    <p class="text-purple-300 text-sm font-medium mb-2">Dicoding Indonesia</p>
+                                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                                        Program pelatihan intensif pengembangan perangkat lunak (Software Development). Fokus pada penguasaan logika pemrograman dan standar industri terkini.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+                                        <span class="px-3 py-1 rounded-md bg-white/5 text-[10px] uppercase tracking-wider text-gray-300 border border-white/10">Software Dev</span>
+                                        <span class="px-3 py-1 rounded-md bg-white/5 text-[10px] uppercase tracking-wider text-gray-300 border border-white/10">Logic</span>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-0">
+                                     <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all" title="Lihat Sertifikat">
+                                        <i class="fas fa-external-link-alt"></i>
+                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-16 reveal">
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-bold serif">Project <span class="text-purple-300 italic">Kuliah & Pribadi</span></h2>
+                    <p class="text-gray-400 mt-2">Geser untuk melihat lebih banyak karya saya.</p>
+                </div>
+                <div class="hidden md:flex gap-4">
+                     <button onclick="scrollProjects('left')" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-black transition-all magnetic-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="scrollProjects('right')" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-black transition-all magnetic-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="relative project-wrapper">
+                <button onclick="scrollProjects('left')" class="scroll-btn left md:hidden"><i class="fas fa-chevron-left"></i></button>
+                
+                <div id="project-container" class="flex gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory py-4 px-2">
+                    
+                    <div class="min-w-[85vw] md:min-w-[400px] snap-center glass-card rounded-2xl overflow-hidden p-4 group cursor-pointer reveal tilt-card">
+                        <div class="glass-card-content">
+                            <div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute bottom-2 left-2 flex gap-1">
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">React</span>
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">Tailwind</span>
+                                </div>
+                            </div>
+                            <div class="px-2 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-xl font-bold mt-1">Sistem Informasi Kampus</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Project Tugas Akhir Semester 4. Dashboard untuk manajemen nilai.</p>
+                                    </div>
+                                    <a href="#" class="text-white hover:text-purple-300 text-xl"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[85vw] md:min-w-[400px] snap-center glass-card rounded-2xl overflow-hidden p-4 group cursor-pointer reveal tilt-card">
+                        <div class="glass-card-content">
+                            <div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                 <div class="absolute bottom-2 left-2 flex gap-1">
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">HTML/CSS</span>
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">JS</span>
+                                </div>
+                            </div>
+                            <div class="px-2 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-xl font-bold mt-1">Personal Blog V1</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Blog sederhana untuk menulis catatan belajar. Tanpa framework.</p>
+                                    </div>
+                                    <a href="#" class="text-white hover:text-purple-300 text-xl"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[85vw] md:min-w-[400px] snap-center glass-card rounded-2xl overflow-hidden p-4 group cursor-pointer reveal tilt-card">
+                        <div class="glass-card-content">
+                            <div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+                                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                 <div class="absolute bottom-2 left-2 flex gap-1">
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">API</span>
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">React</span>
+                                </div>
+                            </div>
+                            <div class="px-2 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-xl font-bold mt-1">Weather App</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Aplikasi cuaca real-time dengan OpenWeatherMap API.</p>
+                                    </div>
+                                    <a href="#" class="text-white hover:text-purple-300 text-xl"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[85vw] md:min-w-[400px] snap-center glass-card rounded-2xl overflow-hidden p-4 group cursor-pointer reveal tilt-card">
+                        <div class="glass-card-content">
+                            <div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+                                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Code" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute bottom-2 left-2 flex gap-1">
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">Python</span>
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">AI</span>
+                                </div>
+                            </div>
+                            <div class="px-2 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-xl font-bold mt-1">Simple Chatbot AI</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Bot percakapan sederhana menggunakan Python dan NLP library.</p>
+                                    </div>
+                                    <a href="#" class="text-white hover:text-purple-300 text-xl"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[85vw] md:min-w-[400px] snap-center glass-card rounded-2xl overflow-hidden p-4 group cursor-pointer reveal tilt-card">
+                        <div class="glass-card-content">
+                            <div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+                                <img src="https://images.unsplash.com/photo-1620288627223-537a2e2d7bf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Crypto" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute bottom-2 left-2 flex gap-1">
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">Web3</span>
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">Solidity</span>
+                                </div>
+                            </div>
+                            <div class="px-2 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-xl font-bold mt-1">Crypto Wallet UI</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Desain konsep antarmuka dompet kripto masa depan.</p>
+                                    </div>
+                                    <a href="#" class="text-white hover:text-purple-300 text-xl"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="min-w-[85vw] md:min-w-[400px] snap-center glass-card rounded-2xl overflow-hidden p-4 group cursor-pointer reveal tilt-card">
+                        <div class="glass-card-content">
+                            <div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Code" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute bottom-2 left-2 flex gap-1">
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">Vue.js</span>
+                                    <span class="bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] text-white">Firebase</span>
+                                </div>
+                            </div>
+                            <div class="px-2 pb-2">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-xl font-bold mt-1">Task Manager App</h3>
+                                        <p class="text-sm text-gray-400 mt-1">Aplikasi manajemen tugas tim dengan fitur real-time update.</p>
+                                    </div>
+                                    <a href="#" class="text-white hover:text-purple-300 text-xl"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <button onclick="scrollProjects('right')" class="scroll-btn right md:hidden"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-4 relative">
+        <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
+            <h2 class="text-4xl md:text-6xl font-bold serif mb-6">Siap untuk <span class="italic text-purple-300">Magang / Kerja?</span></h2>
+            <p class="text-xl text-gray-300 mb-10">Saya selalu mencari peluang untuk belajar dan berkontribusi.<br>Mari diskusikan bagaimana saya bisa membantu tim Anda.</p>
+            
+            <a href="mailto:email@kamu.com" class="magnetic-btn inline-block text-2xl md:text-4xl font-bold border-b-2 border-white/20 hover:border-white hover:text-purple-300 transition-all pb-2 mb-12">
+                anissetiawati2612@gmail.com
+            </a>
+
+            <div class="flex justify-center space-x-8 text-2xl">
+                <a href="#" class="magnetic-btn hover:text-purple-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="magnetic-btn hover:text-purple-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="magnetic-btn hover:text-purple-400 transition-colors" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-sm text-gray-500 border-t border-white/5 glass-panel">
+        <p>&copy; 2024 ans. Code is Poetry.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
